@@ -11,6 +11,7 @@ import {NgxEchartsModule} from "ngx-echarts";
 import {HttpClientModule} from "@angular/common/http";
 import { BitcoinHistoryPriceComponent } from './components/bitcoin-history-price/bitcoin-history-price.component';
 import { TopCoinsByPriceComponent } from './components/top-coins-by-price/top-coins-by-price.component';
+import { DetailPriceComponent } from './components/detail-price/detail-price.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'main/basic', pathMatch: 'full' },
@@ -27,7 +28,8 @@ const routes: Routes = [
     MainComponent,
     BasicComponent,
     BitcoinHistoryPriceComponent,
-    TopCoinsByPriceComponent
+    TopCoinsByPriceComponent,
+    DetailPriceComponent
   ],
   imports: [
     BrowserModule,
