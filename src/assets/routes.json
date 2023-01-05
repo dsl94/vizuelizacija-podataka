@@ -1,0 +1,225 @@
+{
+  "nodes": [
+    {
+      "id": "0",
+      "name": "Belgrade",
+      "symbolSize": 50,
+      "x": -266.82776,
+      "y": 299.6904,
+      "value": 5,
+      "category": 0
+    },
+    {
+      "id": "1",
+      "name": "Nis",
+      "symbolSize": 30,
+      "x": -418.08344,
+      "y": 446.8853,
+      "value": 3,
+      "category": 1
+    },
+    {
+      "id": "2",
+      "name": "Malme",
+      "symbolSize": 30,
+      "x": -212.76357,
+      "y": 245.29176,
+      "value": 3,
+      "category": 0
+    },
+    {
+      "id": "3",
+      "name": "Skopje",
+      "symbolSize": 40,
+      "x": -242.82404,
+      "y": 235.26283,
+      "value": 4,
+      "category": 0
+    },
+    {
+      "id": "4",
+      "name": "Memingem",
+      "symbolSize": 20,
+      "x": -379.30386,
+      "y": 429.06424,
+      "value": 2,
+      "category": 1
+    },
+    {
+      "id": "5",
+      "name": "London Luton",
+      "symbolSize": 30,
+      "x": -417.26337,
+      "y": 406.03506,
+      "value": 3,
+      "category": 0
+    },
+    {
+      "id": "6",
+      "name": "Paris",
+      "symbolSize": 20,
+      "x": -332.6012,
+      "y": 485.16974,
+      "value": 2,
+      "category": 0
+    },
+    {
+      "id": "7",
+      "name": "Eindhoven",
+      "symbolSize": 40,
+      "x": -382.69568,
+      "y": 475.09113,
+      "value": 4,
+      "category": 0
+    },
+    {
+      "id": "8",
+      "name": "Barcelona",
+      "symbolSize": 30,
+      "x": -320.384,
+      "y": 387.17325,
+      "value": 3,
+      "category": 0
+    },
+    {
+      "id": "9",
+      "name": "Sofia",
+      "symbolSize": 40,
+      "x": -344.39832,
+      "y": 451.16772,
+      "value": 4,
+      "category": 0
+    },
+    {
+      "id": "10",
+      "name": "Basel",
+      "symbolSize":30,
+      "x": -89.34107,
+      "y": 234.56128,
+      "value": 3,
+      "category": 1
+    },
+    {
+      "id": "11",
+      "name": "Hamburg",
+      "symbolSize": 20,
+      "x": -87.93029,
+      "y": -6.8120565,
+      "value": 2,
+      "category": 1
+    },
+    {
+      "id": "12",
+      "name": "Bremen",
+      "symbolSize": 20,
+      "x": -339.77908,
+      "y": -184.69139,
+      "value": 2,
+      "category": 1
+    },
+    {
+      "id": "13",
+      "name": "Lisabon",
+      "symbolSize": 20,
+      "x": -194.31313,
+      "y": 178.55301,
+      "value": 2,
+      "category": 1
+    },
+    {
+      "id": "14",
+      "name": "Madrid",
+      "symbolSize": 20,
+      "x": -158.05168,
+      "y": 201.99768,
+      "value": 2,
+      "category": 1
+    }
+  ],
+  "links": [
+    {
+      "source": "1",
+      "target": "0"
+    },
+    {
+      "source": "2",
+      "target": "0"
+    },
+    {
+      "source": "3",
+      "target": "0"
+    },
+    {
+      "source": "3",
+      "target": "2"
+    },
+    {
+      "source": "4",
+      "target": "0"
+    },
+    {
+      "source": "5",
+      "target": "0"
+    },
+    {
+      "source": "6",
+      "target": "0"
+    },
+    {
+      "source": "7",
+      "target": "0"
+    },
+    {
+      "source": "8",
+      "target": "0"
+    },
+    {
+      "source": "9",
+      "target": "0"
+    },
+    {
+      "source": "11",
+      "target": "0"
+    },
+    {
+      "source": "11",
+      "target": "2"
+    },
+    {
+      "source": "11",
+      "target": "3"
+    },
+    {
+      "source": "11",
+      "target": "10"
+    },
+    {
+      "source": "12",
+      "target": "11"
+    },
+    {
+      "source": "13",
+      "target": "11"
+    },
+    {
+      "source": "14",
+      "target": "11"
+    },
+    {
+      "source": "15",
+      "target": "11"
+    },
+    {
+      "source": "17",
+      "target": "16"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Base"
+    },
+    {
+      "name": "Non Base"
+    }
+  ]
+}
