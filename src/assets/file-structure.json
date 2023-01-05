@@ -1,0 +1,42 @@
+{
+  "name": "root",
+  "children": [
+    {
+      "name": "user",
+      "children": [
+        {
+          "name": "nemanja",
+          "children": [
+            {"name": "Documents", "value": 3938},
+            {"name": "Pictures", "value": 3812},
+            {"name": "Videos", "value": 6714}
+          ]
+        },
+        {
+          "name": "admin",
+          "value": 1231
+        }
+      ]
+    },
+    {
+      "name": "system",
+      "children": [
+        {"name": "Network", "value": 1010},
+        {"name": "Applications", "value": 5842},
+        {
+          "name": "Library",
+          "children": [
+            {"name": "Apple", "value": 1983},
+            {"name": "Audio", "value": 2047},
+            {"name": "Developer", "value": 1375},
+            {"name": "Fonts", "value": 8746},
+            {"name": "Logs", "value": 2202},
+            {"name": "Security", "value": 1382}
+          ]
+        },
+        {"name": "Recent", "value": 1041},
+        {"name": "Downloads", "value": 5176}
+      ]
+    }
+  ]
+}

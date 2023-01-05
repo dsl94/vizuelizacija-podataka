@@ -15,6 +15,7 @@ import { DetailPriceComponent } from './components/detail-price/detail-price.com
 import { RouteGraphComponent } from './components/route-graph/route-graph.component';
 import { AdvancedComponent } from './pages/advanced/advanced.component';
 import {FormsModule} from "@angular/forms";
+import { TreeComponent } from './components/tree/tree.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'main/basic', pathMatch: 'full' },
@@ -38,7 +39,8 @@ const routes: Routes = [
     TopCoinsByPriceComponent,
     DetailPriceComponent,
     RouteGraphComponent,
-    AdvancedComponent
+    AdvancedComponent,
+    TreeComponent
   ],
   imports: [
     BrowserModule,
