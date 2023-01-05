@@ -16,6 +16,9 @@ import { RouteGraphComponent } from './components/route-graph/route-graph.compon
 import { AdvancedComponent } from './pages/advanced/advanced.component';
 import {FormsModule} from "@angular/forms";
 import { TreeComponent } from './components/tree/tree.component';
+import { GaugeComponent } from './components/gauge/gauge.component';
+import { Gauge2Component } from './components/gauge2/gauge2.component';
+import { ComplexComponent } from './pages/complex/complex.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'main/basic', pathMatch: 'full' },
@@ -27,6 +30,10 @@ const routes: Routes = [
       {
         path: 'advanced', // child route path
         component: AdvancedComponent, // child route component that the router renders
+      },
+      {
+        path: 'complex', // child route path
+        component: ComplexComponent, // child route component that the router renders
       },
     ] },
 ];
@@ -40,7 +47,10 @@ const routes: Routes = [
     DetailPriceComponent,
     RouteGraphComponent,
     AdvancedComponent,
-    TreeComponent
+    TreeComponent,
+    GaugeComponent,
+    Gauge2Component,
+    ComplexComponent
   ],
   imports: [
     BrowserModule,
