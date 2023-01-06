@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {EChartsOption} from "echarts";
@@ -8,11 +8,9 @@ import {EChartsOption} from "echarts";
   templateUrl: './bitcoin-history-price.component.html',
   styleUrls: ['./bitcoin-history-price.component.scss']
 })
-export class BitcoinHistoryPriceComponent {
+export class BitcoinHistoryPriceComponent implements OnInit{
   options: EChartsOption = {
-    series : [{
-      layout: 'none'
-    }]
+
   };
   private _jsonURL = 'assets/bitcoinPricePerDay.json';
   constructor(private http: HttpClient) {
@@ -34,30 +32,29 @@ export class BitcoinHistoryPriceComponent {
       });
       xAxisData = xAxisData.reverse();
       data1 = data1.reverse();
+      this.options = {
+        legend: {
+          data: ['bar'],
+          align: 'left',
+        },
+        tooltip: {},
+        xAxis: {
+          data: xAxisData,
+          silent: false,
+          splitLine: {
+            show: false,
+          },
+        },
+        yAxis: {},
+        series: [
+          {
+            name: 'Bitcoin price',
+            type: 'bar',
+            data: data1,
+          },
+        ],
+        animationEasing: 'elasticOut',
+      };
     });
-
-    this.options = {
-      legend: {
-        data: ['bar'],
-        align: 'left',
-      },
-      tooltip: {},
-      xAxis: {
-        data: xAxisData,
-        silent: false,
-        splitLine: {
-          show: false,
-        },
-      },
-      yAxis: {},
-      series: [
-        {
-          name: 'Bitcoin price',
-          type: 'bar',
-          data: data1,
-        },
-      ],
-      animationEasing: 'elasticOut',
-    };
   }
 }

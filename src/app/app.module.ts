@@ -19,6 +19,7 @@ import { TreeComponent } from './components/tree/tree.component';
 import { GaugeComponent } from './components/gauge/gauge.component';
 import { Gauge2Component } from './components/gauge2/gauge2.component';
 import { ComplexComponent } from './pages/complex/complex.component';
+import { RadarComponent } from './components/radar/radar.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'main/basic', pathMatch: 'full' },
@@ -50,7 +51,8 @@ const routes: Routes = [
     TreeComponent,
     GaugeComponent,
     Gauge2Component,
-    ComplexComponent
+    ComplexComponent,
+    RadarComponent,
   ],
   imports: [
     BrowserModule,
